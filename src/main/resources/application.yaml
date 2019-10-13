@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: mall-platform-admin
+  redis:
+    host: localhost
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: spring:session
+  security:
+    user:
+      name: lbd
+      password: 123
+server:
+  servlet:
+    session:
+      timeout: 10s
+  port: 8081
